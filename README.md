@@ -49,19 +49,19 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_app_service.pass](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service) | resource |
+| [azurerm_windows_web_app.pass](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_web_app) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_app_service_plan_id"></a> [app\_service\_plan\_id](#input\_app\_service\_plan\_id) | n/a | `string` | n/a | yes |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_health_check_path"></a> [health\_check\_path](#input\_health\_check\_path) | n/a | `string` | `"/health"` | no |
 | <a name="input_location"></a> [location](#input\_location) | n/a | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | (optional) describe your variable | `string` | n/a | yes |
-| <a name="input_storage"></a> [storage](#input\_storage) | n/a | <pre>object({<br>    name         = string<br>    type         = string<br>    account_name = string<br>    share_name   = string<br>    access_key   = string<br>    mount_path   = string<br>  })</pre> | n/a | yes |
+| <a name="input_service_plan_id"></a> [service\_plan\_id](#input\_service\_plan\_id) | n/a | `string` | n/a | yes |
+| <a name="input_storage"></a> [storage](#input\_storage) | n/a | <pre>object({<br>    name         = string<br>    store_type   = string<br>    account_name = string<br>    share_name   = string<br>    access_key   = string<br>    mount_path   = string<br>  })</pre> | n/a | yes |
 
 ## Outputs
 
